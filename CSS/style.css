@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding:0px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+body{
+    background-color: rgb(0, 88, 88);
+}
+
+
+
+/* navbar style */
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: sticky;
+    /* border-bottom: 1px solid rgb(235, 103, 103); */
+    
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 80%;
+    justify-items:auto;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.navbar>a{
+    text-decoration: none;
+    color: aqua;
+    font-weight: bolder;
+    font-size: 20px;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+.input{
+    border: 4px solid rgb(0, 255, 255);
+    height:40px;
+    width: 250px;
+    text-align: center;
+    overflow: none;
+    outline: currentColor;
+}
+/* navbar ends */
+
+/* Welcome text style */
+.welcome{
+    margin: auto;
+    width:fit-content;
+    /* margin-top: 100px; */
+    margin-bottom: 30px;
+    color: white;
+    font-size: 30px;
+    font-style:italic;
+    font-weight:400;
+}
+/* Welcome text ends */
+
+/* interface styling starts */
+.main{
+    background-color: rgb(91, 110, 110);
+    margin: auto;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    /* padding-left: 10px; */
+    
+}
+ .interface{
+     /* border: 2px solid red; */
+    background-color: rgb(91, 110, 110);
+    margin: auto;
+    margin-bottom: 40px;
+    width: 100%;
+    height: 50px;
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    /* border: 2px solid red; */
+} 
+
+
+.task{
+    width: 60%;
+    height: 40px;
+    font-weight: 600;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    overflow: none;
+    outline: currentColor;
+    border:1px solid rgb(0, 0, 0);
+    padding-right: 2px;
+    font-size: 20px;
+}
+.add{
+    
+    width: 100px;
+    /* border-radius: 10%; */
+    border: none;
+    padding: 2px;
+    background-color: rgb(0, 129, 60);
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    
+
+}
+.delete{
+    width: 100px;
+    /* border-radius: 10%; */
+    border: none;
+    padding: 2px;
+    background-color: rgb(209, 9, 9);
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+}
+/* interface styling ends */
+
+
+.result{
+        /* border: 1px dashed red; */
+        background-color: rgb(91, 110, 110);
+        /* margin: auto; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:start;
+        /* padding-left: 10px; */
+}
+/* content styling */
+ .content{
+     width: 100%;
+     height: 80px;
+     transition: 1s;
+    background-color: rgb(125, 156, 153);
+    padding-left: 20px;
+    display:flex;
+    flex-direction: row;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 2px;
+    justify-content: space-around;
+    align-items: center;
+}
+.content:hover{
+    background-color: white;
+}
+.texting{
+    width: 450px;
+    /* border: 1px solid red; */
+    overflow-x:hidden;
+    letter-spacing:normal;
+}
+.editIcon{
+    color: rgb(255, 238, 0);
+    /* border: 1px solid red; */
+    cursor: pointer;
+}
+.editIcon:hover{
+    transform: scale(1.5);
+    
+}
+.doneIcon{
+    color: rgb(4, 0, 255);
+    cursor: pointer;
+}
+.doneIcon:hover{
+    transform: scale(1.5);
+}
+.delIcon{
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+.delIcon:hover{
+    transform: scale(1.5);
+}

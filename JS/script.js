@@ -116,6 +116,7 @@ function editTask(){
               localStorage.setItem('localtask', JSON.stringify(taskArr));
               showTask();
               var trip=true;
+              input[0].value="";
         }
         else{
             alert("This task already exists!")
